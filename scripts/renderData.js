@@ -338,6 +338,7 @@ const allProjects = getProjectsByTypeOrAll(ALL_TYPE);
 // const hightLightProjects = getProjectsByTypeOrAll(HIGHTLIGHT_TYPE);
 
 const renderProjects = (container, data) => {
+  console.log('data', data)
   container.innerHTML = data.map(({ id, title, imgSrc, date, languages }) => {
     return `
         <div class="box" id="${id}">
