@@ -17,9 +17,9 @@ const getProjectsByTypeOrAll = (typeId) => {
           id: 1,
           type: 1,
           enableSite: true,
-          title: 'The Movie Guide',
-          date: '17 de Março de 2022',
-          languages: ['react', 'typescript', 'styledcomponents', 'materialui', 'figma'],
+          title: 'Dealer Marketing Center',
+          date: '01 de Março de 2023',
+          languages: ['vuejs', 'typescript', 'laravel', 'php', 'javascript'],
           description: `The Movie Guide é uma aplicação que reúne informações sobre artistas e produções, permitindo que usuários pesquisem e avaliem seus filmes favoritos, além de personalizar seu próprio perfil. <br /> <br />
     
             Tive muita inspiração de sites como Letterboxd e Filmow, dos quais sou usuário assíduo há anos. Mas a ideia surgiu mesmo do Desafio Front-End da Promobit localizado no repositório do Felipe Fialho, onde cumpri os requisitos apontados e fui além criando novas features, como: <br /> <br />
@@ -35,11 +35,11 @@ const getProjectsByTypeOrAll = (typeId) => {
     
             Foram longas horas de desenvolvimento, e sinto que esse projeto serviu pra consolidar tudo que aprendi nesses últimos meses estudando React.js :)
     `,
-          imgSrc: 'assets/projects/themovieguide.jpg',
-          videoSrc: 'https://streamable.com/e/03hnue',
-          linkedin: 'https://www.linkedin.com/posts/rhuanbello_react-typescript-redux-activity-6909453081608929280-DVm8?utm_source=share&utm_medium=member_desktop',
-          repository: 'https://github.com/rhuanbello/the-movie-guide',
-          site: 'https://the-movie-guide.vercel.app/'
+          imgSrc: 'assets/projects/dmcImage.png',
+          videoSrc: 'https://youtu.be/0JmWvE3n2-g',
+          linkedin: '-',
+          repository: '-',
+          site: 'https://dmc.leadforce.com.br'
         }
       ]
 //   const dataProjects = [
@@ -348,7 +348,7 @@ const renderProjects = (container, data) => {
             <div class="details">
               <p>${title}</p>
               <div class="mini-languages">
-                ${languages.map((language) => `<img src="assets/languages/${language}.svg" alt="${language}">`)}
+                ${languages.map((language) => `<img width="35" class="default-color-svg" src="assets/languages/${language}.svg" alt="${language}">`)}
               </div>
             </div>
           </div>
