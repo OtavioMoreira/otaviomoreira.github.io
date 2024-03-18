@@ -13,7 +13,34 @@ const HIGHTLIGHT_TYPE = 2;
 const ALL_TYPE = 1;
 
 const getProjectsByTypeOrAll = (typeId) => {
-  const dataProjects = []
+  const dataProjects = [{
+          id: 1,
+          type: 2,
+          title: 'The Movie Guide',
+          date: '17 de Março de 2022',
+          languages: ['react', 'typescript', 'styledcomponents', 'materialui', 'figma'],
+          description: `The Movie Guide é uma aplicação que reúne informações sobre artistas e produções, permitindo que usuários pesquisem e avaliem seus filmes favoritos, além de personalizar seu próprio perfil. <br /> <br />
+    
+            Tive muita inspiração de sites como Letterboxd e Filmow, dos quais sou usuário assíduo há anos. Mas a ideia surgiu mesmo do Desafio Front-End da Promobit localizado no repositório do Felipe Fialho, onde cumpri os requisitos apontados e fui além criando novas features, como: <br /> <br />
+    
+            • Realizar upload de Imagens; <br />
+            • Avaliar e catalogar filmes favoritos/já assistidos; <br />
+            • Barra de pesquisa que busca por títulos e artistas simultaneamente; <br />
+            • Animações com a biblioteca Framer Motion; <br />
+            • Rotas dinâmicas com React Router Dom; <br />
+            • Filtro acumulativo de gêneros; <br /> <br />
+    
+            No desenvolvimento decidi utilizar o Vite.js como Build Tool pelo desempenho, Redux pro gerenciamento e armazenamento de Estados Globais, Styled Components pelos diversos benefícios do CSS-in-JS, TypeScript por facilitar na hora de fazer depuração no código e o React Router Dom pra manipulação de rotas;  <br />  <br />
+    
+            Foram longas horas de desenvolvimento, e sinto que esse projeto serviu pra consolidar tudo que aprendi nesses últimos meses estudando React.js :)
+    `,
+          imgSrc: 'assets/projects/themovieguide.jpg',
+          videoSrc: 'https://streamable.com/e/03hnue',
+          linkedin: 'https://www.linkedin.com/posts/rhuanbello_react-typescript-redux-activity-6909453081608929280-DVm8?utm_source=share&utm_medium=member_desktop',
+          repository: 'https://github.com/rhuanbello/the-movie-guide',
+          site: 'https://the-movie-guide.vercel.app/'
+        }
+      ]
 //   const dataProjects = [
 //     {
 //       id: 1,
