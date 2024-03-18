@@ -5,3 +5,7 @@
 .default-color-svg {
     filter: hue-rotate(-60deg);
 }
+
+.w-image {
+    width: 360px;
+}
