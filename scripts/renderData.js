@@ -36,7 +36,7 @@ const getProjectsByTypeOrAll = (typeId) => {
             Foram longas horas de desenvolvimento, e sinto que esse projeto serviu pra consolidar tudo que aprendi nesses últimos meses estudando React.js :)
     `,
           imgSrc: 'assets/projects/dmcImage.png',
-          videoSrc: 'https://streamable.com/8rxamt',
+          videoSrc: 'https://streamable.com/e/8rxamt',
           linkedin: '-',
           repository: '-',
           site: 'https://dmc.leadforce.com.br'
@@ -339,16 +339,16 @@ const allProjects = getProjectsByTypeOrAll(ALL_TYPE);
 // const hightLightProjects = getProjectsByTypeOrAll(HIGHTLIGHT_TYPE);
 
 const renderProjects = (container, data) => {
-  console.log('data', data)
+  // console.log('data', data)
   container.innerHTML = data.map(({ id, title, imgSrc, date, languages }) => {
     return `
         <div class="box" id="${id}">
           <div class="cover">
-            <img width="489" src=${imgSrc}>
+            <img width="489" src="${imgSrc}">
             <div class="details">
               <p>${title}</p>
               <div class="mini-languages">
-                ${languages.map((language) => `<img width="35" class="default-color-svg" src="assets/languages/${language}.svg" alt="${language}">`)}
+                ${languages.map((language) => `<img width="30" class="default-color-svg" src="assets/languages/${language}.svg" alt="${language}">`)}
               </div>
             </div>
           </div>

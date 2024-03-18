@@ -150,6 +150,10 @@ div.dropdown>div.list>div.item span {
     right: 20px;
 }
 
+/* section#projects .container .cards-projects .box .cover>img {
+    width: 100%
+} */
+
 @media (max-width: 700px) {
     header .container .toggle {
         margin-top: 20px;
