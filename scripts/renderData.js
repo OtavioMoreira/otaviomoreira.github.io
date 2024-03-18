@@ -15,7 +15,7 @@ const ALL_TYPE = 1;
 const getProjectsByTypeOrAll = (typeId) => {
   const dataProjects = [{
           id: 1,
-          type: 2,
+          type: 1,
           title: 'The Movie Guide',
           date: '17 de Março de 2022',
           languages: ['react', 'typescript', 'styledcomponents', 'materialui', 'figma'],
