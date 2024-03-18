@@ -16,7 +16,7 @@ const getProjectsByTypeOrAll = (typeId) => {
   const dataProjects = [
     {
       id: 1,
-      type: 1,
+      type: 2,
       enableSite: true,
       title: 'Dealer Marketing Center',
       date: '01 de Março de 2023',
@@ -30,7 +30,7 @@ const getProjectsByTypeOrAll = (typeId) => {
       },
       {
         id: 2,
-        type: 1,
+        type: 2,
         enableSite: true,
         title: 'Auto leads',
         date: '01 de Outubro de 2022',
@@ -44,7 +44,7 @@ const getProjectsByTypeOrAll = (typeId) => {
       },
       {
         id: 3,
-        type: 1,
+        type: 2,
         enableSite: true,
         title: 'Omnitalks',
         date: '01 de Janeiro de 2023',
@@ -58,7 +58,7 @@ const getProjectsByTypeOrAll = (typeId) => {
       },
       {
         id: 4,
-        type: 2,
+        type: 1,
         enableSite: true,
         title: 'ACI Montenegro',
         date: '01 de Fevereiro de 2023',
