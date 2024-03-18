@@ -348,7 +348,7 @@ const renderProjects = (container, data) => {
             <div class="details">
               <p>${title}</p>
               <div class="mini-languages">
-                ${languages.map((language) => `<img src="assets/mini-languages/${language}.svg" alt="${language}">`)}
+                ${languages.map((language) => `<img src="assets/languages/${language}.svg" alt="${language}">`)}
               </div>
             </div>
           </div>
