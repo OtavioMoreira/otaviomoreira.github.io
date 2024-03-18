@@ -373,7 +373,7 @@ const renderProjects = (container, data) => {
     return `
         <div class="box" id="${id}">
           <div class="cover">
-            <img width="489" src="${imgSrc}">
+            <img width="489" height="310" src="${imgSrc}">
             <div class="details">
               <p>${title}</p>
               <div class="mini-languages">
