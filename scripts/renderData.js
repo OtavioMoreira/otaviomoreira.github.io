@@ -383,7 +383,7 @@ const renderFrontSkillsSection = () => {
 }
 
 const renderbackSkillsSection = () => {
-  const cardsContainer = document.querySelector('.cards-frontend');
+  const cardsContainer = document.querySelector('.cards-backend');
 
   const skills = [
     {

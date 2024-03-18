@@ -17,3 +17,7 @@ section#skills .skills .container h3 {
     font-weight: 600;
     margin-bottom: 10rem;
 }
+
+section#skills .skills .container .cards {
+    margin-bottom: 10rem;
+}
