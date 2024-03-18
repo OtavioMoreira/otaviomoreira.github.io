@@ -13,35 +13,64 @@ const HIGHTLIGHT_TYPE = 2;
 const ALL_TYPE = 1;
 
 const getProjectsByTypeOrAll = (typeId) => {
-  const dataProjects = [{
-          id: 1,
-          type: 1,
-          enableSite: true,
-          title: 'Dealer Marketing Center',
-          date: '01 de Março de 2023',
-          languages: ['vuejs', 'typescript', 'laravel', 'php', 'javascript'],
-          description: `The Movie Guide é uma aplicação que reúne informações sobre artistas e produções, permitindo que usuários pesquisem e avaliem seus filmes favoritos, além de personalizar seu próprio perfil. <br /> <br />
-    
-            Tive muita inspiração de sites como Letterboxd e Filmow, dos quais sou usuário assíduo há anos. Mas a ideia surgiu mesmo do Desafio Front-End da Promobit localizado no repositório do Felipe Fialho, onde cumpri os requisitos apontados e fui além criando novas features, como: <br /> <br />
-    
-            • Realizar upload de Imagens; <br />
-            • Avaliar e catalogar filmes favoritos/já assistidos; <br />
-            • Barra de pesquisa que busca por títulos e artistas simultaneamente; <br />
-            • Animações com a biblioteca Framer Motion; <br />
-            • Rotas dinâmicas com React Router Dom; <br />
-            • Filtro acumulativo de gêneros; <br /> <br />
-    
-            No desenvolvimento decidi utilizar o Vite.js como Build Tool pelo desempenho, Redux pro gerenciamento e armazenamento de Estados Globais, Styled Components pelos diversos benefícios do CSS-in-JS, TypeScript por facilitar na hora de fazer depuração no código e o React Router Dom pra manipulação de rotas;  <br />  <br />
-    
-            Foram longas horas de desenvolvimento, e sinto que esse projeto serviu pra consolidar tudo que aprendi nesses últimos meses estudando React.js :)
-    `,
-          imgSrc: 'assets/projects/dmcImage.png',
-          videoSrc: 'https://streamable.com/e/8rxamt',
-          linkedin: '-',
-          repository: '-',
-          site: 'https://dmc.leadforce.com.br'
-        }
-      ]
+  const dataProjects = [
+    {
+      id: 1,
+      type: 1,
+      enableSite: true,
+      title: 'Dealer Marketing Center',
+      date: '01 de Março de 2023',
+      languages: ['vuejs', 'laravel', 'codeigniter', 'docker', 'portainer', 'mysql'],
+      description: `...`,
+      imgSrc: 'assets/projects/dmcImage.png',
+      videoSrc: 'https://streamable.com/e/8rxamt',
+      linkedin: '-',
+      repository: '-',
+      site: 'https://dmc.leadforce.com.br'
+      },
+      {
+        id: 2,
+        type: 1,
+        enableSite: true,
+        title: 'Auto leads',
+        date: '01 de Outubro de 2022',
+        languages: ['react', 'laravel', 'docker', 'portainer', 'mysql'],
+        description: `...`,
+        imgSrc: 'assets/projects/autoleadsImage.png',
+        videoSrc: 'https://streamable.com/e/wwga12',
+        linkedin: '-',
+        repository: '-',
+        site: 'https://app.autoleads.com.br'
+      },
+      {
+        id: 3,
+        type: 1,
+        enableSite: true,
+        title: 'Omnitalks',
+        date: '01 de Janeiro de 2023',
+        languages: ['react', 'laravel', 'docker', 'mysql'],
+        description: `...`,
+        imgSrc: 'assets/projects/omnitalksImage.png',
+        videoSrc: 'https://streamable.com/e/i24zz2',
+        linkedin: '-',
+        repository: '-',
+        site: 'https://app.omnitalks.com.br'
+      },
+      {
+        id: 4,
+        type: 1,
+        enableSite: true,
+        title: 'ACI Montenegro',
+        date: '01 de Fevereiro de 2023',
+        languages: ['javascript', 'codeigniter', 'mysql', 'php'],
+        description: `...`,
+        imgSrc: 'assets/projects/aciImage.png',
+        videoSrc: 'https://streamable.com/e/3pdraq',
+        linkedin: '-',
+        repository: '-',
+        site: 'http://www.acimontenegro.com.br/'
+      }
+  ]
 //   const dataProjects = [
 //     {
 //       id: 1,
