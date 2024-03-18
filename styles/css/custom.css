@@ -1,0 +1,7 @@
+.font-bold {
+    font-weight: bold;
+}
+
+.default-color-svg {
+    filter: hue-rotate(-60deg);
+}
