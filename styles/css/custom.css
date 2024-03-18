@@ -21,3 +21,11 @@ section#skills .skills .container h3 {
 section#skills .skills .container .cards {
     margin-bottom: 10rem;
 }
+
+.select2-results__option {
+    color: #555;
+}
+
+.flag-text {
+    margin-left: 10px;
+}
