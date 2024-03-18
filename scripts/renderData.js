@@ -335,7 +335,7 @@ const getProjectsByTypeOrAll = (typeId) => {
 }
 
 const allProjects = getProjectsByTypeOrAll(ALL_TYPE);
-const hightLightProjects = getProjectsByTypeOrAll(HIGHTLIGHT_TYPE);
+// const hightLightProjects = getProjectsByTypeOrAll(HIGHTLIGHT_TYPE);
 
 const renderProjects = (container, data) => {
   container.innerHTML = data.map(({ id, title, imgSrc, date, languages }) => {
