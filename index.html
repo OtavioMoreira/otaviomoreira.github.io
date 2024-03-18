@@ -9,9 +9,6 @@
   <title>Portfólio | Otávio Moreira - Desenvolvedor Full-Stack Developer</title>
   <link rel="shortcut icon" href="assets/favicon-me.png" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" integrity="sha256-xJOZHfpxLR/uhh1BwYFS5fhmOAdIRQaiOul5F/b7v3s=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/css/flag-icon.min.css" integrity="sha256-EQjZwW4ljrt9dsonbyX+si6kbxgkVde47Ty9FQehnUg=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="styles/css/style.css">
   <link rel="stylesheet" href="styles/css/custom.css">
 </head>
@@ -33,7 +30,60 @@
         </label>
 
         <div>
-          <select class="country-select" name="country"></select>
+          <div class="currency-switcher">
+            <div class="dropdown">
+              <div class="caption">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 504" width="32" height="17">
+                  <g fill-rule="evenodd">
+                    <path fill="#ffd700" d="M0 0h720v504H0z"/>
+                    <path fill="#009b3a" d="M0 0h720v336H0z"/>
+                    <path fill="#ff0000" d="M0 0h720v168H0z"/>
+                  </g>
+                </svg>
+                BR
+                <span>BR</span>
+              </div>
+              <div class="list">
+                <div class="item selected" data-item="br">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 504" width="32" height="17">
+                    <g fill-rule="evenodd">
+                      <path fill="#ffd700" d="M0 0h720v504H0z"/>
+                      <path fill="#009b3a" d="M0 0h720v336H0z"/>
+                      <path fill="#ff0000" d="M0 0h720v168H0z"/>
+                    </g>
+                  </svg>
+                  BR
+                  <span>br</span>
+                </div>
+
+                <div class="item" data-item="US">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 900" width="32" height="17">
+                    <rect width="1500" height="900" fill="#b22234"/>
+                    <g fill="#fff">
+                      <path d="M0 0h750v450H0z"/>
+                      <path d="M0 450h750v450H0z"/>
+                    </g>
+                    <g fill="#fff">
+                      <path d="M0 0h300v900H0z"/>
+                      <path d="M750 0h300v900H750z"/>
+                    </g>
+                  </svg>                  
+                  US
+                  <span>US</span>
+                </div>
+
+                <div class="item" data-item="US">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="32" height="17">
+                    <path fill="#d52b1e" d="M0 0h512v170.667H0z"/>
+                    <path fill="#009e49" d="M0 341.333h512V512H0z"/>
+                    <path fill="#ffce00" d="M0 170.667h512v170.666H0z"/>
+                  </svg>                                 
+                  PT
+                  <span>PT</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -195,11 +245,7 @@
       <a href="#contacts">Contatos</a>
     </nav>
   </div>
-
-  <script src="https://code.jquery.com/jquery-3.2.0.min.js"
-  integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"
-  integrity="sha256-+mWd/G69S4qtgPowSELIeVAv7+FuL871WXaolgXnrwQ=" crossorigin="anonymous"></script>
+  
 
   <script defer src="scripts/index.js" type="module"></script>
   <script defer src="scripts/renderData.js"></script>
