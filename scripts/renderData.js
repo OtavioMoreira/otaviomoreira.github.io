@@ -332,8 +332,8 @@ const renderProjects = (container, data) => {
   }).join('');
 }
 
-const renderSkillsSection = () => {
-  const cardsContainer = document.querySelector('.cards');
+const renderFrontSkillsSection = () => {
+  const cardsContainer = document.querySelector('.cards-frontend');
 
   const skills = [
     {

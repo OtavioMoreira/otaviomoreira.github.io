@@ -9,3 +9,11 @@
 .w-image {
     width: 360px;
 }
+
+section#skills .skills .container h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2.5rem;
+    color: #F9F9F9;
+    font-weight: 600;
+    margin-bottom: 10rem;
+}

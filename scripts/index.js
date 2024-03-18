@@ -112,7 +112,7 @@ const initLightMode = () => {
         })
   
       } else {
-        element.innerHTML = 'Desenvolvedor Front-End'
+        element.innerHTML = 'Desenvolvedor Fullstack'
         const textToArray = element.innerHTML.split('')
         element.innerHTML = ''
   
