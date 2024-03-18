@@ -7,7 +7,7 @@ const modalLinkProject = modal.querySelector('.links a.link-project')
 const modalLinkRepository = modal.querySelector('.links a.link-repository')
 const modalLinkLinkedin = modal.querySelector('.links a.link-linkedin')
 const iframe = modal.querySelector('.video iframe')
-const highlightsProjectsContainer = document.querySelector('.highlights .cards-projects');
+// const highlightsProjectsContainer = document.querySelector('.highlights .cards-projects');
 const allProjectsContainer = document.querySelector('.allprojects .cards-projects');
 const HIGHTLIGHT_TYPE = 2;
 const ALL_TYPE = 1;
@@ -500,7 +500,7 @@ const detectCloseModal = () => {
 
 renderFrontSkillsSection();
 renderbackSkillsSection();
-renderProjects(highlightsProjectsContainer, hightLightProjects);
+// renderProjects(highlightsProjectsContainer, hightLightProjects);
 renderProjects(allProjectsContainer, allProjects);
 const projectsBox = document.querySelectorAll('.box');
 detectCloseModal();
