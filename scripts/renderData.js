@@ -382,6 +382,56 @@ const renderFrontSkillsSection = () => {
   `).join('')
 }
 
+const renderbackSkillsSection = () => {
+  const cardsContainer = document.querySelector('.cards-frontend');
+
+  const skills = [
+    {
+      name: 'PHP',
+      src: 'php'
+    },
+    {
+      name: 'Laravel',
+      src: 'laravel'
+    },
+    {
+      name: 'Codeigniter',
+      src: 'codeigniter'
+    },
+    {
+      name: 'APT Rest',
+      src: 'apirest'
+    },
+    {
+      name: 'Docker',
+      src: 'docker'
+    },
+    {
+      name: 'Aws',
+      src: 'aws'
+    },
+    {
+      name: 'Portainer',
+      src: 'portainer'
+    },
+    {
+      name: 'Git',
+      src: 'git'
+    },
+    {
+      name: 'Mysql',
+      src: 'mysql'
+    },
+  ]
+
+  cardsContainer.innerHTML = skills.map(({ name, src }, index) => `
+    <div class="box" key="${index}">
+      <p>${name}</p>
+      <img class="default-color-svg" src="assets/languages/${src}.svg" alt="html">
+    </div>
+  `).join('')
+}
+
 const addData = ({ title, description, date, site, repository, linkedin, videoSrc }) => {
   modal.classList.remove('hidden');
   document.body.style.overflow = 'hidden';
@@ -421,7 +471,8 @@ const detectCloseModal = () => {
   document.addEventListener('keydown', ({ key }) => key === "Escape" && closeModal());
 }
 
-renderSkillsSection();
+renderFrontSkillsSection();
+renderbackSkillsSection();
 renderProjects(highlightsProjectsContainer, hightLightProjects);
 renderProjects(allProjectsContainer, allProjects);
 const projectsBox = document.querySelectorAll('.box');
