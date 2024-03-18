@@ -103,7 +103,7 @@ const initLightMode = () => {
         })
   
       } else if (element == span) {
-        element.innerHTML = 'Rhuan Bello :)'
+        element.innerHTML = 'Otávio Moreira'
         const textToArray = element.innerHTML.split('')
         element.innerHTML = ''
   
