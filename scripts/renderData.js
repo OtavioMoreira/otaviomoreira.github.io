@@ -343,7 +343,7 @@ const renderProjects = (container, data) => {
     return `
         <div class="box" id="${id}">
           <div class="cover">
-            <img src=${imgSrc} alt="dowhile 2021">
+            <img src=${imgSrc}>
             <div class="details">
               <p>${title}</p>
               <div class="mini-languages">
@@ -460,7 +460,7 @@ const renderbackSkillsSection = () => {
   `).join('')
 }
 
-const addData = ({ title, description, date, site, repository, linkedin, videoSrc }) => {
+const addData = ({ title, description, date, site, repository, linkedin, videoSrc, enableSite = false, enableRepository = false, enableLinkedin = false, imgSrc = null }) => {
   modal.classList.remove('hidden');
   document.body.style.overflow = 'hidden';
   document.body.classList.add('transparent')
@@ -468,10 +468,21 @@ const addData = ({ title, description, date, site, repository, linkedin, videoSr
   modalDescription.innerHTML = description
   modalDate.innerHTML = date
   modalLinkProject.setAttribute('href', site)
+  modalLinkProject.setAttribute('enable', enableSite)
   modalLinkRepository.setAttribute('href', repository)
+  modalLinkRepository.setAttribute('href', enableRepository)
   modalLinkLinkedin.setAttribute('href', linkedin)
-  iframe.setAttribute('src', videoSrc + '?autoplay=1&amp;loop=0')
+  modalLinkLinkedin.setAttribute('href', enableLinkedin)
+  if(videoSrc != null) {
+    iframe.setAttribute('src', videoSrc + '?autoplay=1&amp;loop=0')
+  }else if(imgSrc != null) {
+    iframe.hide();
 
+  }else {
+    iframe.hide();
+  }
+
+  console.log('addData', addData)
 }
 
 const insertProjectAction = () => {

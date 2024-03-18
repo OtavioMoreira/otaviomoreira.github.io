@@ -93,6 +93,11 @@ div.dropdown>div.list {
     padding: 10px 0;
 }
 
+.modal .links a[disabled] {
+    pointer-events: none;
+    background-image: linear-gradient(90deg, rgb(75 87 92 / 80%) .2%, rgb(116 129 135 / 65%) 100%);
+}
+
 div.dropdown.open>div.list {
     -webkit-transform: scale(1);
     transform: scale(1);
