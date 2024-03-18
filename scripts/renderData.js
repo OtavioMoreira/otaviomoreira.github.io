@@ -335,86 +335,49 @@ const renderProjects = (container, data) => {
 const renderSkillsSection = () => {
   const cardsContainer = document.querySelector('.cards');
 
-  const skills = []
-  // const skills = [
-  //   {
-  //     name: 'HTML5',
-  //     src: 'html'
-  //   },
-  //   {
-  //     name: 'CSS3',
-  //     src: 'css'
-  //   },
-  //   {
-  //     name: 'JavaScript',
-  //     src: 'javascript'
-  //   },
-  //   {
-  //     name: 'TypeScript',
-  //     src: 'typescript'
-  //   },
-  //   {
-  //     name: 'React.js',
-  //     src: 'react'
-  //   },
-  //   {
-  //     name: 'Next.js',
-  //     src: 'nextjs'
-  //   },
-  //   {
-  //     name: 'CSS-in-JS',
-  //     src: 'styledcomponents'
-  //   },
-  //   {
-  //     name: 'Material UI',
-  //     src: 'materialui'
-  //   },
-  //   {
-  //     name: 'Tailwind CSS',
-  //     src: 'tailwindcss'
-  //   },
-  //   {
-  //     name: 'GraphQL',
-  //     src: 'graphql'
-  //   },
-  //   {
-  //     name: 'Apollo',
-  //     src: 'apollo'
-  //   },
-  //   {
-  //     name: 'Redux',
-  //     src: 'redux'
-  //   },
-  //   {
-  //     name: 'React Query',
-  //     src: 'reactquery'
-  //   },
-  //   {
-  //     name: 'React Testing',
-  //     src: 'testing'
-  //   },
-  //   {
-  //     name: 'Strapi',
-  //     src: 'strapi'
-  //   },
-  //   {
-  //     name: 'Storybook',
-  //     src: 'storybook'
-  //   },
-  //   {
-  //     name: 'SASS',
-  //     src: 'sass'
-  //   },
-  //   {
-  //     name: 'Figma',
-  //     src: 'figma'
-  //   }
-  // ]
+  const skills = [
+    {
+      name: 'HTML5',
+      src: 'html'
+    },
+    {
+      name: 'CSS3',
+      src: 'css'
+    },
+    {
+      name: 'JavaScript',
+      src: 'javascript'
+    },
+    {
+      name: 'TypeScript',
+      src: 'typescript'
+    },
+    {
+      name: 'React.js',
+      src: 'react'
+    },
+    {
+      name: 'Vue.js',
+      src: 'vuejs'
+    },
+    {
+      name: 'Next.js',
+      src: 'nextjs'
+    },
+    {
+      name: 'Material UI',
+      src: 'materialui'
+    },
+    {
+      name: 'Tailwind CSS',
+      src: 'tailwindcss'
+    }
+  ]
 
   cardsContainer.innerHTML = skills.map(({ name, src }, index) => `
     <div class="box" key="${index}">
       <p>${name}</p>
-      <img src="assets/languages/${src}.svg" alt="html">
+      <img class="default-color-svg" src="assets/languages/${src}.svg" alt="html">
     </div>
   `).join('')
 }
