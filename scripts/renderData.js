@@ -36,7 +36,7 @@ const getProjectsByTypeOrAll = (typeId) => {
             Foram longas horas de desenvolvimento, e sinto que esse projeto serviu pra consolidar tudo que aprendi nesses últimos meses estudando React.js :)
     `,
           imgSrc: 'assets/projects/dmcImage.png',
-          videoSrc: 'https://youtu.be/0JmWvE3n2-g',
+          videoSrc: 'https://streamable.com/8rxamt',
           linkedin: '-',
           repository: '-',
           site: 'https://dmc.leadforce.com.br'
@@ -344,7 +344,7 @@ const renderProjects = (container, data) => {
     return `
         <div class="box" id="${id}">
           <div class="cover">
-            <img src=${imgSrc}>
+            <img width="489" src=${imgSrc}>
             <div class="details">
               <p>${title}</p>
               <div class="mini-languages">
