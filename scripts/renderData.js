@@ -16,6 +16,7 @@ const getProjectsByTypeOrAll = (typeId) => {
   const dataProjects = [{
           id: 1,
           type: 1,
+          enableSite: true,
           title: 'The Movie Guide',
           date: '17 de Março de 2022',
           languages: ['react', 'typescript', 'styledcomponents', 'materialui', 'figma'],
@@ -470,9 +471,9 @@ const addData = ({ title, description, date, site, repository, linkedin, videoSr
   modalLinkProject.setAttribute('href', site)
   modalLinkProject.setAttribute('enable', enableSite)
   modalLinkRepository.setAttribute('href', repository)
-  modalLinkRepository.setAttribute('href', enableRepository)
+  modalLinkRepository.setAttribute('enable', enableRepository)
   modalLinkLinkedin.setAttribute('href', linkedin)
-  modalLinkLinkedin.setAttribute('href', enableLinkedin)
+  modalLinkLinkedin.setAttribute('enable', enableLinkedin)
   if(videoSrc != null) {
     iframe.setAttribute('src', videoSrc + '?autoplay=1&amp;loop=0')
   }else if(imgSrc != null) {

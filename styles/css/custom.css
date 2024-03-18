@@ -93,7 +93,7 @@ div.dropdown>div.list {
     padding: 10px 0;
 }
 
-.modal .links a[disabled] {
+.modal .links a[enable=false] {
     pointer-events: none;
     background-image: linear-gradient(90deg, rgb(75 87 92 / 80%) .2%, rgb(116 129 135 / 65%) 100%);
 }
