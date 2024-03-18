@@ -25,11 +25,12 @@ section#skills .skills .container .cards {
 
 header .container .toggle .label {
     margin-right: 2rem;
+    height: 2rem;
 }
 
 .currency-switcher {
     position: relative;
-    margin: 50px auto;
+    margin: 0 auto;
     width: 268px;
 }
 
@@ -44,7 +45,7 @@ div.dropdown:after {
     margin: 0;
     width: 16px;
     height: 17px;
-    background-image: url(http://botkits.ru/img/icons/down.svg);
+    background-image: url('/assets/down-chevron.svg');
     top: 15px;
     right: 10px;
     -webkit-transition: .3s;
@@ -132,6 +133,7 @@ div.dropdown>div.caption span {
     color: #243CBB;
     position: absolute;
     right: 36px;
+    font-family: 'Poppins', sans-serif;
 }
 
 div.dropdown>div.list>div.item span {
