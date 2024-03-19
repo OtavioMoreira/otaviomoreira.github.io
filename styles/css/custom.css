@@ -154,8 +154,13 @@ div.dropdown>div.list>div.item span {
     width: 100%
 } */
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     header .container .toggle {
         margin-top: 20px;
+    }
+    
+    section#projects .container .cards-projects .box .cover img {
+        width: 100% !important;
+        height: auto !important;
     }
 }
