@@ -18,7 +18,7 @@ const getProjectsByTypeOrAll = (typeId) => {
       id: 1,
       type: 2,
       enableSite: true,
-      title: 'Dealer Marketing Center',
+      title: 'teste',
       date: '01 de Março de 2023',
       languages: ['vuejs', 'laravel', 'codeigniter', 'docker', 'portainer', 'mysql'],
       description: `A DMC(Dealer Marketing Center) foi um projeto tive a oportunidade de realizar desde o levantamento de requisitos, criação da estrutura do banco de dados, 
@@ -36,7 +36,7 @@ const getProjectsByTypeOrAll = (typeId) => {
         id: 2,
         type: 2,
         enableSite: true,
-        title: 'Auto leads',
+        title: 'teste 2',
         date: '01 de Outubro de 2022',
         languages: ['react', 'laravel', 'docker', 'portainer', 'mysql'],
         description: `O Auto Leads é um gerenciador de estoque para seminovos, sua função principal é centralizar os estoques dos clientes em um único lugar,
@@ -56,7 +56,10 @@ const getProjectsByTypeOrAll = (typeId) => {
         title: 'Omnitalks',
         date: '01 de Janeiro de 2023',
         languages: ['react', 'laravel', 'docker', 'mysql'],
-        description: `O Omnitalks teste pt-br 1`,
+        description: `O Omnitalks é uma ferramente Omnichannel, responsável pela comunicação os leads por qualquer meio de contato. Inicilamente ela foi 
+        idealizada para ser uma ferramente de whatsapp com multiplos brokers (fornececedores da API Oficial do Whatsapp), porém após analise de mercado e da 
+        capacidade do próprio produto, ampliamos para comunicações com Facebook Messenger, Instagram Direct e um Chat robo integrado. Eu participei de toda a criação
+        do projeto e depois ajudei a mante-lo por um tempo determinado, posteriormente fiquei responsável pela infraestrutura, arquitetura e definições de regras de negócio.`,
         imgSrc: 'assets/projects/omnitalksImage.png',
         videoSrc: 'https://streamable.com/e/i24zz2',
         linkedin: '-',
