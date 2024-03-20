@@ -2,10 +2,8 @@ $('.dropdown > .caption').on('click', function() {
     $(this).parent().toggleClass('open');
 });
 
-// $('.price').attr('data-currency', 'RUB');
-
 $(document).ready(function(){
-    $('html body .translateBR').show()
+    loadAndExecuteScript('scripts/renderDataBR.js');
 });
 
 $('.dropdown > .list > .item').on('click', function() {
