@@ -4,22 +4,24 @@ $('.dropdown > .caption').on('click', function() {
 
 // $('.price').attr('data-currency', 'RUB');
 
+$(document).ready(function(){
+    $('html body .translateBR').show()
+});
+
 $('.dropdown > .list > .item').on('click', function() {
     $('.dropdown > .list > .item').removeClass('selected');
     $(this).addClass('selected').parent().parent().removeClass('open').children('.caption').html($(this).html());
+    $('html body .translateGeneral').hide()
 
     if ($(this).data("item") == "BR") {
-        console.log('entrou', 'BR')
+        $('html body .translateBR').show()
         loadAndExecuteScript('scripts/renderDataBR.js');
-        console.log('terminou', 'BR')
     } else if ($(this).data("item") == "US") {
-        console.log('entrou', 'US')
+        $('html body .translateUS').show()
         loadAndExecuteScript('scripts/renderDataUS.js');
-        console.log('terminou', 'US')
     } else if ($(this).data("item") == "PT") {
-        console.log('entrou', 'PT')
+        $('html body .translateBR').show()
         loadAndExecuteScript('scripts/renderDataBR.js');
-        console.log('terminou', 'PT')
     }
 });
 

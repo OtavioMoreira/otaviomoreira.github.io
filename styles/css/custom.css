@@ -26,6 +26,10 @@ header .container .toggle {
     align-items: center;
 }
 
+html body .translateGeneral {
+    display: none;
+}
+
 header .container .toggle .label {
     margin-right: 2rem;
     height: 2rem;
@@ -34,12 +38,12 @@ header .container .toggle .label {
 .currency-switcher {
     position: relative;
     margin: 0 auto;
-    width: 268px;
+    width: 130px;
 }
 
 div.dropdown {
     position: relative;
-    width: 268px;
+    width: 130px;
 }
 
 div.dropdown:after {
