@@ -10,15 +10,15 @@ $('.dropdown > .list > .item').on('click', function() {
 
     if ($(this).data("item") == "BR") {
         console.log('entrou', 'BR')
-        loadAndExecuteScript('renderDataBR.js');
+        loadAndExecuteScript('scripts/renderDataBR.js');
         console.log('terminou', 'BR')
     } else if ($(this).data("item") == "US") {
         console.log('entrou', 'US')
-        loadAndExecuteScript('renderDataUS.js');
+        loadAndExecuteScript('scripts/renderDataUS.js');
         console.log('terminou', 'US')
     } else if ($(this).data("item") == "PT") {
         console.log('entrou', 'PT')
-        loadAndExecuteScript('renderDataBR.js');
+        loadAndExecuteScript('scripts/renderDataBR.js');
         console.log('terminou', 'PT')
     }
 });
