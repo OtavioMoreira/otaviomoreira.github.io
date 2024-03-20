@@ -18,14 +18,15 @@ const getProjectsByTypeOrAll = (typeId) => {
       id: 1,
       type: 2,
       enableSite: true,
-      title: 'teste',
-      date: '01 de Março de 2023',
+      title: 'Dealer Marketing Center',
+      date: 'March 1st, 2023',
       languages: ['vuejs', 'laravel', 'codeigniter', 'docker', 'portainer', 'mysql'],
-      description: `A DMC(Dealer Marketing Center) foi um projeto tive a oportunidade de realizar desde o levantamento de requisitos, criação da estrutura do banco de dados, 
-      desenvolvimento da arquitetura de infraestrutura, criação da API Rest, até o front-end. Não fui somente o braço técnico que criou e projetou, 
-      como também entendi a necessidade de uma ferramenta dessas no mercado de marketing automotivo, e motivei a diretoria a investir nesse projeto, 
-      que hoje se tornou o carro chefe da empresa. Essa ferramenta se trata de uma inteligência de marketing para guiar os concessionários 
-      para o melhor caminho no mundo digital.`,
+      description: `A DMC (Dealer Marketing Center) was a project I had the opportunity to carry out from requirements 
+      gathering, database structure creation, infrastructure architecture development, REST API creation, to front-end 
+      development. I wasn't just the technical arm that created and designed, but I also understood the need for such 
+      a tool in the automotive marketing market, and motivated the management to invest in this project, which has now 
+      become the flagship of the company. This tool is a marketing intelligence to guide dealerships through the best path 
+      in the digital world.`,
       imgSrc: 'assets/projects/dmcImage.png',
       videoSrc: 'https://streamable.com/e/8rxamt',
       linkedin: '-',
@@ -36,13 +37,14 @@ const getProjectsByTypeOrAll = (typeId) => {
         id: 2,
         type: 2,
         enableSite: true,
-        title: 'teste 2',
-        date: '01 de Outubro de 2022',
+        title: 'Auto leads',
+        date: 'October 1st, 2022',
         languages: ['react', 'laravel', 'docker', 'portainer', 'mysql'],
-        description: `O Auto Leads é um gerenciador de estoque para seminovos, sua função principal é centralizar os estoques dos clientes em um único lugar,
-        e fornecer a possibilidade de publicar seus anuncios em diversos portais de seminovos com maior agilidade. Tive a oportunidade de projetar o produto 
-        e ajudar a mante-lo, trabalhei prestando manutenção no projeto e se responsabilizando por toda sua infraestrutura junto a outro desenvolvedor. 
-        Nesse projeto eu implantei a primeira rotina de deploy automizado, utilizamos o gitlab registry, gitlab runner e o portainer.`,
+        description: `The Auto Leads is an inventory manager for pre-owned vehicles. Its main function is to centralize clients' 
+        inventories in one place and provide the possibility to publish their listings on various pre-owned vehicle portals more efficiently. 
+        I had the opportunity to design the product and assist in maintaining it. I worked on providing maintenance to the project and was responsible 
+        for its entire infrastructure alongside another developer. In this project, I implemented the first automated deployment routine. We utilized 
+        GitLab Registry, GitLab Runner, and Portainer.`,
         imgSrc: 'assets/projects/autoleadsImage.png',
         videoSrc: 'https://streamable.com/e/wwga12',
         linkedin: '-',
@@ -54,12 +56,13 @@ const getProjectsByTypeOrAll = (typeId) => {
         type: 2,
         enableSite: true,
         title: 'Omnitalks',
-        date: '01 de Janeiro de 2023',
+        date: 'January 1st, 2023',
         languages: ['react', 'laravel', 'docker', 'mysql'],
-        description: `O Omnitalks é uma ferramente Omnichannel, responsável pela comunicação os leads por qualquer meio de contato. Inicilamente ela foi 
-        idealizada para ser uma ferramente de whatsapp com multiplos brokers (fornececedores da API Oficial do Whatsapp), porém após analise de mercado e da 
-        capacidade do próprio produto, ampliamos para comunicações com Facebook Messenger, Instagram Direct e um Chat robo integrado. Eu participei de toda a criação
-        do projeto e depois ajudei a mante-lo por um tempo determinado, posteriormente fiquei responsável pela infraestrutura, arquitetura e definições de regras de negócio.`,
+        description: `The Omnitalks is an Omnichannel tool responsible for communicating with leads through any contact channel. 
+        Initially, it was conceived to be a WhatsApp tool with multiple brokers (providers of the Official WhatsApp API). However, 
+        after market analysis and evaluation of the product's capabilities, we expanded it to communications with Facebook Messenger, 
+        Instagram Direct, and an integrated chatbot. I participated in the entire project creation process and later assisted in maintaining 
+        it for a specified period. Subsequently, I became responsible for the infrastructure, architecture, and business rule definitions.`,
         imgSrc: 'assets/projects/omnitalksImage.png',
         videoSrc: 'https://streamable.com/e/i24zz2',
         linkedin: '-',
@@ -71,9 +74,10 @@ const getProjectsByTypeOrAll = (typeId) => {
         type: 1,
         enableSite: true,
         title: 'ACI Montenegro',
-        date: '01 de Fevereiro de 2023',
-        languages: ['javascript', 'codeigniter', 'mysql', 'php'],
-        description: `A Aci teste pt-br 2`,
+        date: 'February 1st, 2023',
+        languages: ['javascript', 'codeigniter', 'grocerycrud', 'mysql', 'php'],
+        description: `The ACI website was an outsourced project with a partner agency. Compared to conventional projects, alongside the website, a micro system for 
+        job listing and management was developed. It was a very interesting project that helps many people to reintegrate into the job market.`,
         imgSrc: 'assets/projects/aciImage.png',
         videoSrc: 'https://streamable.com/e/3pdraq',
         linkedin: '-',
@@ -85,9 +89,10 @@ const getProjectsByTypeOrAll = (typeId) => {
         type: 1,
         enableSite: true,
         title: 'Raetec',
-        date: '01 de Maio de 2022',
-        languages: ['javascript', 'codeigniter', 'mysql', 'php'],
-        description: `A Raetec teste pt-br 3`,
+        date: 'May 1st, 2022',
+        languages: ['javascript', 'codeigniter', 'grocerycrud', 'mysql', 'php'],
+        description: `The Raetec website was a conventional project. These projects undergo budgeting based on a pre-approved layout. Based on this 
+        budget, the designs are created along with an administrative panel that manages the content.`,
         imgSrc: 'assets/projects/raetecImage.png',
         videoSrc: 'https://streamable.com/e/6zydsi',
         linkedin: '-',
@@ -99,14 +104,45 @@ const getProjectsByTypeOrAll = (typeId) => {
         type: 1,
         enableSite: true,
         title: 'Kappão',
-        date: '01 de Agosto de 2021',
-        languages: ['javascript', 'codeigniter', 'mysql', 'php'],
-        description: `A Kappao teste pt-br 4`,
+        date: 'August 1st, 2021',
+        languages: ['javascript', 'codeigniter', 'grocerycrud', 'mysql', 'php'],
+        description: `The Kappão website was a conventional project. These projects undergo budgeting based on a pre-approved layout. Based on this budget, 
+        the designs are created along with an administrative panel that manages the content.`,
         imgSrc: 'assets/projects/kappaoImage.png',
         videoSrc: 'https://streamable.com/e/nxlb6n',
         linkedin: '-',
         repository: '-',
         site: 'https://www.kappao.com.br/'
+      },
+      {
+        id: 7,
+        type: 1,
+        enableSite: true,
+        title: 'Agrogen',
+        date: 'August 1st, 2021',
+        languages: ['javascript', 'codeigniter', 'grocerycrud', 'mysql', 'php'],
+        description: `The Agrogen website was a conventional project. These projects undergo budgeting based on a pre-approved layout. Based on this budget, 
+        the designs are created along with an administrative panel that manages the content.`,
+        imgSrc: 'assets/projects/agrogenImage.png',
+        videoSrc: 'https://streamable.com/e/vtpy7u',
+        linkedin: '-',
+        repository: '-',
+        site: 'http://www.sipat-agrogen.com.br/'
+      },
+      {
+        id: 8,
+        type: 1,
+        enableSite: true,
+        title: 'Technow',
+        date: 'February 1st, 2023',
+        languages: ['javascript', 'codeigniter', 'grocerycrud', 'mysql', 'php'],
+        description: `The Technow website was a conventional project. These projects undergo budgeting based on a pre-approved layout. Based on this budget, 
+        the designs are created along with an administrative panel that manages the content.`,
+        imgSrc: 'assets/projects/technowImage.png',
+        videoSrc: 'https://streamable.com/e/kl8p2l',
+        linkedin: '-',
+        repository: '-',
+        site: 'https://technowdados.com.br/'
       }
   ];
 
@@ -221,8 +257,8 @@ const renderbackSkillsSection = () => {
       src: 'portainer'
     },
     {
-      name: 'Git',
-      src: 'git'
+      name: 'Grocery Crud',
+      src: 'grocerycrud'
     },
     {
       name: 'Mysql',

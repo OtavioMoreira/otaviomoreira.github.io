@@ -72,8 +72,10 @@ const getProjectsByTypeOrAll = (typeId) => {
         enableSite: true,
         title: 'ACI Montenegro',
         date: '01 de Fevereiro de 2023',
-        languages: ['javascript', 'codeigniter', 'mysql', 'php'],
-        description: `A Aci teste pt-br 2`,
+        languages: ['javascript', 'codeigniter', 'grocerycrud', 'mysql', 'php'],
+        description: `O website da ACI foi um projeto terceirizado com um agência parceira, comparado a projetos convencionais, 
+        foi desenvolvido junto ao site um micro sistema de cadastro e gerenciamento de vagas de trabalho. Um projeto bem interessante 
+        que ajuda diversas pessoas a se recolocarem no mercado de trabalho.`,
         imgSrc: 'assets/projects/aciImage.png',
         videoSrc: 'https://streamable.com/e/3pdraq',
         linkedin: '-',
@@ -86,8 +88,9 @@ const getProjectsByTypeOrAll = (typeId) => {
         enableSite: true,
         title: 'Raetec',
         date: '01 de Maio de 2022',
-        languages: ['javascript', 'codeigniter', 'mysql', 'php'],
-        description: `A Raetec teste pt-br 3`,
+        languages: ['javascript', 'codeigniter', 'grocerycrud', 'mysql', 'php'],
+        description: `O website da Raetec foi um projeto convencional, esses projetos passam por um orçamento com base em um layout pré aprovado.
+        Com base nesse orçamento são feitas as criações de delas e painel administrativo que faz o gerenciamento do conteúdo.`,
         imgSrc: 'assets/projects/raetecImage.png',
         videoSrc: 'https://streamable.com/e/6zydsi',
         linkedin: '-',
@@ -100,13 +103,44 @@ const getProjectsByTypeOrAll = (typeId) => {
         enableSite: true,
         title: 'Kappão',
         date: '01 de Agosto de 2021',
-        languages: ['javascript', 'codeigniter', 'mysql', 'php'],
-        description: `A Kappao teste pt-br 4`,
+        languages: ['javascript', 'codeigniter', 'grocerycrud', 'mysql', 'php'],
+        description: `O website da Kappão foi um projeto convencional, esses projetos passam por um orçamento com base em um layout pré aprovado.
+        Com base nesse orçamento são feitas as criações de delas e painel administrativo que faz o gerenciamento do conteúdo.`,
         imgSrc: 'assets/projects/kappaoImage.png',
         videoSrc: 'https://streamable.com/e/nxlb6n',
         linkedin: '-',
         repository: '-',
         site: 'https://www.kappao.com.br/'
+      },
+      {
+        id: 7,
+        type: 1,
+        enableSite: true,
+        title: 'Agrogen',
+        date: '01 de Agosto de 2021',
+        languages: ['javascript', 'codeigniter', 'grocerycrud', 'mysql', 'php'],
+        description: `O website da Kappão foi um projeto convencional, esses projetos passam por um orçamento com base em um layout pré aprovado.
+        Com base nesse orçamento são feitas as criações de delas e painel administrativo que faz o gerenciamento do conteúdo.`,
+        imgSrc: 'assets/projects/agrogenImage.png',
+        videoSrc: 'https://streamable.com/e/vtpy7u',
+        linkedin: '-',
+        repository: '-',
+        site: 'http://www.sipat-agrogen.com.br/'
+      },
+      {
+        id: 8,
+        type: 1,
+        enableSite: true,
+        title: 'Technow',
+        date: '01 de Fevereiro de 2023',
+        languages: ['javascript', 'codeigniter', 'grocerycrud', 'mysql', 'php'],
+        description: `O website da Technow foi um projeto convencional, esses projetos passam por um orçamento com base em um layout pré aprovado.
+        Com base nesse orçamento são feitas as criações de delas e painel administrativo que faz o gerenciamento do conteúdo.`,
+        imgSrc: 'assets/projects/technowImage.png',
+        videoSrc: 'https://streamable.com/e/kl8p2l',
+        linkedin: '-',
+        repository: '-',
+        site: 'https://technowdados.com.br/'
       }
   ];
 
@@ -221,8 +255,8 @@ const renderbackSkillsSection = () => {
       src: 'portainer'
     },
     {
-      name: 'Git',
-      src: 'git'
+      name: 'Grocery Crud',
+      src: 'grocerycrud'
     },
     {
       name: 'Mysql',

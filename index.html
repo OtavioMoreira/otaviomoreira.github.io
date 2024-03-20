@@ -24,7 +24,7 @@
         <h2>Portifólio</h2>
       </a>
       <a href="#sobre" class="translateGeneral translateUS">
-        <h2>Projects</h2>
+        <h2>Portfolio</h2>
       </a>
       <div class="toggle">
         <input type="checkbox" name="checkbox" id="checkbox">
@@ -71,8 +71,10 @@
             <p></p>
           </div>
           <div class="actions">
-            <a href="assets/cv/cv-otavio.pdf" download>Download CV</a>
-            <a href="mailto:otaviommoreira94@gmail.com" target="_blank">Entrar em contato</a>
+            <a href="assets/cv/cv-otavio.pdf" download class="translateGeneral translateBR">Baixar CV</a>
+            <a href="assets/cv/cv-otavio.pdf" download class="translateGeneral translateUS">Download CV</a>
+            <a href="mailto:otaviommoreira94@gmail.com" target="_blank" class="translateGeneral translateBR">Entrar em contato</a>
+            <a href="mailto:otaviommoreira94@gmail.com" target="_blank" class="translateGeneral translateUS">Contact us</a>
           </div>
         </div>
         <div class="profile">
@@ -81,24 +83,44 @@
           </a>
         </div>
       </div>
-      <div class="about">
+      <div class="about translateGeneral translateBR">
         <h2>Sobre mim</h2>
         <p>
-          <b class="font-bold">Desenvolvedor Front-end:</b> Experiência em React.js, Next.js, JavaScript, TypeScript,
+          <b class="font-bold">Desenvolvedor Front-end:</b> Experiência com React.js, Next.js, JavaScript, TypeScript,
           Styled
           Components, Material UI, TailwindCSS, Boostrap e consumo de APIs REST.
         </p>
         <p>
-          <b class="font-bold">Desenvolvedor Back-end:</b> Experiência em PHP, Codeigniter, Laravel. Familiariado com
+          <b class="font-bold">Desenvolvedor Back-end:</b> Experiência com PHP, Codeigniter, Laravel. Familiariado com
           integrações de serviços ou bibliotecas.
         </p>
         <p>
-          <b class="font-bold">Devops:</b> Experiência em AWS, Docker, Portainer, Versel e Gitlab.
-          Criei e prestei manutenção em um ambiente de deploy continuo usando com Gitlab, Docker e Portainer.
+          <b class="font-bold">Devops:</b> Experiência com AWS, Docker, Portainer, Versel e Gitlab.
+          Criei e prestei manutenção com um ambiente de deploy continuo usando com Gitlab, Docker e Portainer.
         </p>
         <p>
-          Possuo experiência em projetos gerenciados por Metodologias Ágeis.
+          Possuo experiência com projetos gerenciados por Metodologias Ágeis.
           Formado em Analise e desenvolvimento de sistemas na UNISC. Pós graduado em gerencia de projetos na UNIASSELVI.
+        </p> 
+      </div>
+
+      <div class="about translateGeneral translateUS">
+        <h2>About me</h2>
+        <p>
+          <b class="font-bold">Front-end Developer:</b> Experiência com React.js, Next.js, JavaScript, TypeScript,
+          Styled
+          Components, Material UI, TailwindCSS, Boostrap e consumo de APIs REST.
+        </p>
+        <p>
+          <b class="font-bold">Back-end Developer:</b> Experiência com PHP, Codeigniter, Laravel. Familiarity with service integrations or libraries.
+        </p>
+        <p>
+          <b class="font-bold">Devops:</b> Experiência com AWS, Docker, Portainer, Versel e Gitlab.
+          I created and maintained a continuous deployment environment using Gitlab, Docker, and Portainer.
+        </p>
+        <p>
+          I have experience with projects managed by Agile Methodologies. Graduated in Systems Analysis and Development at UNISC. 
+          Postgraduate degree in Project Management at UNIASSELVI.
         </p> 
       </div>
     </div>
@@ -106,7 +128,8 @@
   <section id="skills" class="js-section">
     <div class="skills">
       <div class="container">
-        <h2>Habilidades</h2>
+        <h2 class="translateGeneral translateBR">Habilidades</h2>
+        <h2 class="translateGeneral translateUS">Skills</h2>
         <h3>Frontend</h3>
         <div class="cards cards-frontend"></div>
 
@@ -117,13 +140,16 @@
   </section>
   <section id="projects" class="js-section">
     <div class="container">
-      <h2>Projetos</h2>
+      <h2 class="translateGeneral translateBR">Projetos</h2>
+      <h2 class="translateGeneral translateUS">Projects</h2>
       <div class="highlights">
-        <h3>Sistemas</h3>
+        <h3 class="translateGeneral translateBR">Sistemas</h3>
+        <h3 class="translateGeneral translateUS">Systems</h3>
         <div class="cards-projects"></div>
       </div>
       <div class="allprojects">
-        <h3>Websites</h3>
+        <h3 class="translateGeneral translateBR">Sites</h3>
+        <h3 class="translateGeneral translateUS">Websites</h3>
         <div class="cards-projects"></div>
       </div>
     </div>
@@ -131,7 +157,8 @@
   <section id="contacts" class="js-section">
     <div class="contacts">
       <div class="container">
-        <h2>Contatos</h2>
+        <h2 class="translateGeneral translateBR">Contatos</h2>
+        <h2 class="translateGeneral translateUS">Contacts</h2>
         <div class="icons">
           <div class="icon">
             <a href="mailto:otaviommoreira94@gmail.com" target="_blank">
@@ -140,7 +167,8 @@
               </div>
             </a>
             <a href="mailto:otaviommoreira94@gmail.com" target="_blank">
-              <p>E-mail</p>
+              <p class="translateGeneral translateBR">E-mail</p>
+              <p class="translateGeneral translateUS">Mail</p>
             </a>
             <a href="mailto:otaviommoreira94@gmail.com" target="_blank">
               <p>otaviommoreira94@gmail.com</p>
@@ -153,7 +181,8 @@
               </div>
             </a>
             <a href="https://api.whatsapp.com/send?phone=5551996482554" target="_blank">
-              <p>Telefone</p>
+              <p class="translateGeneral translateBR">Telefone</p>
+              <p class="translateGeneral translateUS">Phone</p>
             </a>
             <a href="https://api.whatsapp.com/send?phone=5551996482554" target="_blank">
               <p>(51) 99648-2554</p>
@@ -204,19 +233,39 @@
       </div>
     </div>
     <div class="links">
-      <a href="" target="_blank" class="link-project">Acessar projeto</a>
-      <a href="" target="_blank" class="link-repository">Acessar repositório</a>
-      <a href="" target="_blank" class="link-linkedin">Ver post no Linkedin</a>
+      <div class="translateGeneral translateBR">
+        <a href="" target="_blank" class="link-project">Acessar projeto</a>
+        <a href="" target="_blank" class="link-repository">Acessar repositório</a>
+        <a href="" target="_blank" class="link-linkedin">Ver post no Linkedin</a>
+      </div>
+
+      <div class="translateGeneral translateUS">
+        <a href="" target="_blank" class="link-project">Access project</a>
+        <a href="" target="_blank" class="link-repository">Access repository</a>
+        <a href="" target="_blank" class="link-linkedin">View post on LinkedIn</a>
+      </div>
     </div>
   </div>
   <div class="menuOpen hidden">
-    <h2>Bem-vindo ao meu Portfólio</h2>
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#skills">Habilidades</a>
-      <a href="#projects">Projetos</a>
-      <a href="#contacts">Contatos</a>
-    </nav>
+    <div class="translateGeneral translateBR"></div>
+      <h2>Bem-vindo ao meu Portfólio</h2>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contacts">Contatos</a>
+      </nav>
+    </div>
+
+    <div class="translateGeneral translateUS"></div>
+      <h2>Welcome to my Portfolio</h2>
+      <nav>
+        <a href="#sobre">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contacts">Contact</a>
+      </nav>
+    </div>
   </div>
   
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
