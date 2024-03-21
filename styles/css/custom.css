@@ -31,15 +31,19 @@ header .container .toggle {
     align-items: center;
 }
 
-html body .translateGeneral.translateBR {
-    display: block;
-}
 
 html body .translateGeneral,
 html body section#sobre .about.translateGeneral,
 section#sobre .banner .intro .actions a.translateGeneral,
 section#projects .container h3.translateGeneral {
     display: none;
+}
+
+html body .translateGeneral.translateBR,
+html body section#sobre .about.translateGeneral.translateBR,
+section#sobre .banner .intro .actions a.translateGeneral.translateBR,
+section#projects .container h3.translateGeneral.translateBR {
+    display: block;
 }
 
 header .container .toggle .label {
