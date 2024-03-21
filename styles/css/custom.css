@@ -38,6 +38,9 @@ section#sobre .banner .intro .actions a.translateGeneral,
 section#projects .container h3.translateGeneral {
     display: none;
 }
+html body .translateGeneral, html body section#sobre .about.translateGeneral.translateBR{
+    display: flex;
+} 
 
 html body .translateGeneral.translateBR,
 html body section#sobre .about.translateGeneral.translateBR,
