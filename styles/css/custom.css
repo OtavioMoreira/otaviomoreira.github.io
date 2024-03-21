@@ -38,15 +38,18 @@ section#sobre .banner .intro .actions a.translateGeneral,
 section#projects .container h3.translateGeneral {
     display: none;
 }
-html body .translateGeneral, html body section#sobre .about.translateGeneral.translateBR{
+
+html body .translateGeneral.translateBR,
+section#sobre .banner .intro .actions a.translateGeneral.translateBR {
+    display: block;
+}
+
+html body section#sobre .about.translateGeneral.translateBR{
     display: flex;
 } 
 
-html body .translateGeneral.translateBR,
-html body section#sobre .about.translateGeneral.translateBR,
-section#sobre .banner .intro .actions a.translateGeneral.translateBR,
 section#projects .container h3.translateGeneral.translateBR {
-    display: block;
+    display: inline-block;
 }
 
 header .container .toggle .label {

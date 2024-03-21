@@ -10,18 +10,18 @@ $('.dropdown > .list > .item').on('click', function() {
     if ($(this).data("item") == "BR") {
         $('html body .translateBR').show()
         $('html body section#sobre .about.translateGeneral.translateBR').css('display', 'flex')
-        $('html body section#projects .container h3.translateGeneral.translateBR').css('display', 'inline-block')
+        $('section#projects .container h3.translateGeneral.translateBR').css('display', 'inline-block')
         
         loadAndExecuteScript('scripts/renderDataBR.js');
     } else if ($(this).data("item") == "US") {
         $('html body .translateUS').show()
         $('html body section#sobre .about.translateGeneral.translateUS').css('display', 'flex')
-        $('html body section#projects .container h3.translateGeneral.translateBR').css('display', 'inline-block')
+        $('section#projects .container h3.translateGeneral.translateUS').css('display', 'inline-block')
         loadAndExecuteScript('scripts/renderDataUS.js');
     } else if ($(this).data("item") == "PT") {
         $('html body .translateBR').show()
         $('html body section#sobre .about.translateGeneral.translateBR').css('display', 'flex')
-        $('html body section#projects .container h3.translateGeneral.translateBR').css('display', 'inline-block')
+        $('section#projects .container h3.translateGeneral.translateBR').css('display', 'inline-block')
         loadAndExecuteScript('scripts/renderDataBR.js');
     }
 });
