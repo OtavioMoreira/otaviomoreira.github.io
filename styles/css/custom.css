@@ -32,7 +32,7 @@ header .container .toggle {
 }
 
 html body .translateGeneral.translateBR {
-    display: none;
+    display: block;
 }
 
 html body .translateGeneral,
