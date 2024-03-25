@@ -185,7 +185,7 @@ div.dropdown>div.list>div.item span {
         margin-top: 20px;
     }
     
-    section#projects .container .cards-projects .box .cover img {
+    section#projects .container .cards-projects .box .cover img.img-port {
         width: 100% !important;
         height: auto !important;
     }
