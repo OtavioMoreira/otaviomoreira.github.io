@@ -228,48 +228,46 @@ const renderbackSkillsSection = () => {
   const cardsContainer = document.querySelector('.cards-backend');
 
   const skills = [
-    {
-      name: 'PHP',
-      src: 'php'
-    },
-    {
-      name: 'Laravel',
-      src: 'laravel'
-    },
-    {
-      name: 'Codeigniter',
-      src: 'codeigniter'
-    },
-    {
-      name: 'APT Rest',
-      src: 'apirest'
-    },
-    {
-      name: 'Docker',
-      src: 'docker'
-    },
-    {
-      name: 'Aws',
-      src: 'aws'
-    },
-    {
-      name: 'Portainer',
-      src: 'portainer'
-    },
-    {
-      name: 'Grocery Crud',
-      src: 'grocerycrud'
-    },
-    {
-      name: 'Mysql',
-      src: 'mysql'
-    },
+    { name: 'PHP', src: 'php' },
+    { name: 'Laravel', src: 'laravel' },
+    { name: 'Codeigniter', src: 'codeigniter' },
+    { name: 'Node.js', src: 'nodejs' },
+    { name: 'API Rest', src: 'apirest' },
+    { name: 'MySQL', src: 'mysql' },
+    { name: 'PostgreSQL', src: 'postgresql' },
+    { name: 'MongoDB', src: 'mongodb' },
+    { name: 'Redis', src: 'redis' },
+    { name: 'Elasticsearch', src: 'elasticsearch' },
+    { name: 'RabbitMQ', src: 'rabbitmq' },
+    { name: 'Grocery Crud', src: 'grocerycrud' },
   ]
 
   cardsContainer.innerHTML = skills.map(({ name, src }, index) => `
     <div class="box" key="${index}">
       <p>${name}</p>
-      <img class="default-color-svg" src="assets/languages/${src}.svg" alt="html">
+      <img class="default-color-svg" src="assets/languages/${src}.svg" alt="${name}">
+    </div>
+  `).join('')
+}
+
+const renderDevopsSkillsSection = () => {
+  const cardsContainer = document.querySelector('.cards-devops');
+
+  const skills = [
+    { name: 'Docker', src: 'docker' },
+    { name: 'AWS', src: 'aws' },
+    { name: 'Portainer', src: 'portainer' },
+    { name: 'Kubernetes', src: 'kubernetes' },
+    { name: 'GitLab', src: 'gitlab' },
+    { name: 'Vercel', src: 'vercel' },
+    { name: 'DigitalOcean', src: 'digitalocean' },
+    { name: 'Nginx', src: 'nginx' },
+  ]
+
+  cardsContainer.innerHTML = skills.map(({ name, src }, index) => `
+    <div class="box" key="${index}">
+      <p>${name}</p>
+      <img class="default-color-svg" src="assets/languages/${src}.svg" alt="${name}">
     </div>
   `).join('')
 }
@@ -326,6 +324,7 @@ const detectCloseModal = () => {
 
 renderFrontSkillsSection();
 renderbackSkillsSection();
+renderDevopsSkillsSection();
 renderProjects(highlightsProjectsContainer, hightLightProjects);
 renderProjects(allProjectsContainer, allProjects);
 const projectsBox = document.querySelectorAll('.box');
