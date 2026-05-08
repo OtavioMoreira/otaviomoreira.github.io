@@ -4,8 +4,6 @@ const modalTitle = modal.querySelector('.title h2')
 const modalDescription = modal.querySelector('.info p')
 const modalDate = modal.querySelector('span')
 const modalLinkProject = modal.querySelector('.links a.link-project')
-const modalLinkRepository = modal.querySelector('.links a.link-repository')
-const modalLinkLinkedin = modal.querySelector('.links a.link-linkedin')
 const iframe = modal.querySelector('.video iframe')
 const highlightsProjectsContainer = document.querySelector('.highlights .cards-projects');
 const allProjectsContainer = document.querySelector('.allprojects .cards-projects');
@@ -14,6 +12,23 @@ const ALL_TYPE = 1;
 
 const getProjectsByTypeOrAll = (typeId) => {
   const dataProjects = [
+    {
+      id: 9,
+      type: 2,
+      enableSite: true,
+      title: 'Portal B2B - Rede Ancora',
+      date: 'junho de 2024',
+      languages: ['react', 'typescript', 'laravel', 'nodejs', 'docker', 'mysql'],
+      description: `O Portal B2B da Rede Ancora é uma plataforma de comércio digital voltada para o relacionamento entre a rede e seus parceiros comerciais.
+      Atuo no desenvolvimento e evolução da plataforma como Desenvolvedor Full Stack Sênior, trabalhando com PHP/Laravel e Node.js no back-end,
+      e React.js com TypeScript no front-end. Participo ativamente de decisões técnicas, definição de arquitetura, code reviews e
+      otimização de performance utilizando Redis, RabbitMQ e Elasticsearch.`,
+      imgSrc: 'assets/projects/redeancora.png',
+      videoSrc: null,
+      linkedin: '-',
+      repository: '-',
+      site: 'https://app.redeancora.com.br/portal'
+    },
     {
       id: 1,
       type: 2,
@@ -270,7 +285,7 @@ const renderDevopsSkillsSection = () => {
   `).join('')
 }
 
-const addData = ({ title, description, date, site, repository, linkedin, videoSrc, enableSite = false, enableRepository = false, enableLinkedin = false, imgSrc = null }) => {
+const addData = ({ title, description, date, site, enableSite = false, videoSrc, imgSrc = null }) => {
   modal.classList.remove('hidden');
   document.body.style.overflow = 'hidden';
   document.body.classList.add('transparent')
@@ -279,10 +294,6 @@ const addData = ({ title, description, date, site, repository, linkedin, videoSr
   modalDate.innerHTML = date
   modalLinkProject.setAttribute('href', site)
   modalLinkProject.setAttribute('enable', enableSite)
-  modalLinkRepository.setAttribute('href', repository)
-  modalLinkRepository.setAttribute('enable', enableRepository)
-  modalLinkLinkedin.setAttribute('href', linkedin)
-  modalLinkLinkedin.setAttribute('enable', enableLinkedin)
   if(videoSrc != null) {
     iframe.setAttribute('src', videoSrc + '?autoplay=1&amp;loop=0')
   }else if(imgSrc != null) {

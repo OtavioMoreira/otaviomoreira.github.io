@@ -20,6 +20,7 @@ section#skills .skills .container h3 {
 
 section#skills .skills .container .cards {
     margin-bottom: 10rem;
+    justify-content: center;
 }
 
 section#sobre .banner .intro .actions a.effect{
@@ -180,11 +181,15 @@ div.dropdown>div.list>div.item span {
     width: 100%
 } */
 
+section#projects .container .cards-projects {
+    justify-content: center;
+}
+
 @media (max-width: 800px) {
     header .container .toggle {
         margin-top: 20px;
     }
-    
+
     section#projects .container .cards-projects .box .cover img.img-port {
         width: 100% !important;
         height: auto !important;
